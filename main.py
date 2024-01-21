@@ -73,9 +73,9 @@ def run():
         pc_cards.append(process_card())
         pc_score=calculate_score(pc_cards)
         
-    print(f" PC's final cards: {pc_cards}; Your final score is: {pc_score}")
+    print(f" PC's final cards: {pc_cards}; PC's final score is: {pc_score}")
     print(f" Your final cards: {user_cards}; Your final score is: {user_score}")
-    print(compare_score(pc_score,user_score))
+    print(compare_score(user_score,pc_score))
     
 # initialize game
 while input("Start Game? Type 'y' to start the game or 'n' to ignore: ")=="y":
